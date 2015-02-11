@@ -1,0 +1,16 @@
+{
+    "name": "develme/schema-wireframe",
+    "description": "Quickly stub out Laravel models, views and controllers based on MySQL's schema.",
+    "require": {
+        "laravel/laravel": "5.0",
+        "php": "5.4.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Verron Knowles",
+            "email": "Verron.Knowles@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

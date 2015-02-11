@@ -1,0 +1,11 @@
+<h3>Update {{&proper_name}}<a href="/{{&simple_name}}/{{ $_{{&simple_name}}->id }}" class="button rounded secondary right">Cancel</a></h3>
+<hr />
+{{ Form::model($_{{&simple_name}}, array('route' => array('{{&simple_name}}.update', $_{{&simple_name}}->id), 'method' => "PUT")) }}
+    {{&data_head_body}}
+    
+    <div class="row">
+        <div class="large-3 large-offset-9 columns">
+            {{ Form::submit('Update {{&proper_name}}', array('class' => 'button rounded expand')) }}
+        </div>
+    </div>
+{{ Form::close() }}

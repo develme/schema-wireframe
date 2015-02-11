@@ -1,0 +1,6 @@
+@extends('{{&layout_master}}')
+
+@section('{{&layout_content}}')
+
+{{contents}}
+@stop

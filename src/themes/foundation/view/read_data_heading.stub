@@ -1,0 +1,4 @@
+    <div class="row" style="line-height: 40px;">
+        <div class="large-6 columns text-right">
+            {{title}}:
+        </div>

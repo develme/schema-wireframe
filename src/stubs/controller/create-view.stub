@@ -1,0 +1,12 @@
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return Response
+     */
+    public function create()
+    {
+        $_{{simple_name}} = $this->model;
+        
+        // Create view for {{model_name}}
+        return \View::make('{{simple_name}}.create', compact('_{{simple_name}}'));
+    }
