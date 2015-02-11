@@ -2,8 +2,7 @@
     "name": "develme/schema-wireframe",
     "description": "Quickly stub out Laravel models, views and controllers based on MySQL's schema.",
     "require": {
-        "laravel/framework": "5.0.*",
-        "php": "5.4.*"
+        "laravel/framework": "5.0.*"
     },
     "license": "MIT",
     "authors": [
