@@ -5,7 +5,7 @@
 
     <div class="row" style="padding-top: 28px;">
         <div class="large-3 large-offset-6 columns">
-            <a class="button rounded expand secondary" href="/{{&simple_name}}">Cancel</a>
+            <a class="button rounded expand secondary" href="{{ route('{{&simple_name}}.index') }}">Cancel</a>
         </div>
         <div class="large-3 columns">
             {{ Form::submit('Create {{&proper_name}}', array('class' => 'button rounded expand')) }}

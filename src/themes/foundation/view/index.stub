@@ -1,4 +1,4 @@
-<h3>{{&proper_name}} List<a href="/{{&simple_name}}/create" class="button rounded right">New {{&proper_name}}</a></h3>
+<h3>{{&proper_name}} List<a href="{{ route('{{&simple_name}}.create') }}" class="button rounded right">New {{&proper_name}}</a></h3>
 <hr>
 
 <div class="row">

@@ -245,7 +245,7 @@ class ViewMakeCommand extends SchemaGeneratorCommand
         $column_data = $this->getStubFile($column['&file']);
 
         // Fix up required
-        $column['required'] = $column['required'] ? "requried" : "";
+        $column['required'] = $column['required'] ? "required" : "";
 
         $this->replaceTag($column_data, $column);
 

@@ -1,4 +1,4 @@
-<h3>View {{&proper_name}}<a href="/{{&simple_name}}/{{ $_{{&simple_name}}->id }}/edit" class="button rounded right">Edit {{&proper_name}}</a></h3>
+<h3>View {{&proper_name}}<a href="{{ route('{{&simple_name}}.edit', $_{{&simple_name}}->id) }}" class="button rounded right">Edit {{&proper_name}}</a></h3>
 <hr />
 <div class="row">
     <div class="large-12 columns">
@@ -9,7 +9,7 @@
 {{ Form::open(array('route' => array('{{&simple_name}}.destroy', $_{{&simple_name}}->id), 'method' => 'delete')) }}
     <div class="row" style="padding-top: 28px;">
         <div class="large-3 large-offset-6 columns">
-            <a class="button rounded expand secondary" href="/{{&simple_name}}">Back</a>
+            <a class="button rounded expand secondary" href="{{ route('{{&simple_name}}.index') }}">Back</a>
         </div>
         <div class="large-3 columns">
             {{ Form::submit('Delete {{&proper_name}}', array('class' => 'button alert rounded expand')) }}

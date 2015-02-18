@@ -1,4 +1,4 @@
-<h3>Update {{&proper_name}}<a href="/{{&simple_name}}/{{ $_{{&simple_name}}->id }}" class="button rounded secondary right">Cancel</a></h3>
+<h3>Update {{&proper_name}}<a href="{{ route('{{&simple_name}}.show', $_{{&simple_name}}->id) }}" class="button rounded secondary right">Cancel</a></h3>
 <hr />
 {{ Form::model($_{{&simple_name}}, array('route' => array('{{&simple_name}}.update', $_{{&simple_name}}->id), 'method' => "PUT")) }}
     {{&data_head_body}}

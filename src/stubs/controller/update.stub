@@ -14,7 +14,6 @@
         // Be wary, with great power comes great responsibility
         $_{{simple_name}} = $this->model->find($id)->update($update_data);
         
-        $destination = "/{{simple_name}}/$id";
         // \Redirection for {{model_name}}
-        return \Redirect::to($destination)->with('success', '{{proper_name}} successfully created');
+        return \Redirect::route('{{simple_name}}.show', $id)->with('success', '{{proper_name}} successfully created');
     }
