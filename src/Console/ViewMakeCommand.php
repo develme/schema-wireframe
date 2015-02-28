@@ -96,7 +96,10 @@ class ViewMakeCommand extends SchemaGeneratorCommand
      */
     protected function getPath($name)
     {
-        return $this->laravel->basePath()."/resources/views/" . $name . ".blade.php";
+        $path = $this->option('path');
+        $view_name = "$name.blade.php";
+        $base_path = str_finish($this->laravel->basePath(), "/");
+        return is_null($path) ? "${base_path}resources/views/${view_name}" : $base_path . str_finish($path, '/') . $view_name;
     }
     
 	/**
@@ -298,6 +301,7 @@ class ViewMakeCommand extends SchemaGeneratorCommand
 		return array(
 			array('table', null, InputOption::VALUE_REQUIRED, 'The name of the table'),
 			array('theme', null, InputOption::VALUE_OPTIONAL, 'The theme for the view [bootstrap|foundation|custom]'),
+			array('path', null, InputOption::VALUE_OPTIONAL, 'The path to store the views'),
 		);
 	}
 
