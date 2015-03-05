@@ -1,0 +1,5 @@
+            <div class="col-lg-6">
+                {{ $_{{&simple_name}}->{{name}} }}<br />
+            </div>
+        </div>
+

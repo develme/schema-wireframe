@@ -1,0 +1,21 @@
+<h3>{{&proper_name}} List<a href="{{ route('{{&simple_name}}.create') }}" class="btn btn-lg btn-primary pull-right">New {{&proper_name}}</a></h3>
+<hr>
+
+<div class="row">
+    <div class="col-lg-12 columns">
+        <table class="table table-striped">
+            <thead>
+                    <tr>
+                        {{&data_heading}}
+                    </tr>
+            </thead>
+            <tbody>
+                @foreach($_{{&simple_name}} as $_selected_{{&simple_name}})
+                    <tr>
+                        {{&data_body}}
+                    </tr>
+                @endforeach
+            <tbody>
+        </table>
+    </div>
+</div>

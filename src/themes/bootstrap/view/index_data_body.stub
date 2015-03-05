@@ -1,0 +1,1 @@
+                        <td><a href="{{ route('{{&simple_name}}.show', $_selected_{{&simple_name}}->id) }}">{{ $_selected_{{&simple_name}}->{{name}} }}</a></td>

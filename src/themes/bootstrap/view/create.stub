@@ -1,0 +1,14 @@
+<h3>Create {{&proper_name}}</h3>
+<hr />
+{{ Form::model($_{{&simple_name}}, array('route' => array('{{&simple_name}}.store'), 'class' => 'form-horizontal')) }}
+    {{&data_head_body}}
+
+    <div class="form-group" style="padding-top: 28px;">
+        <div class="col-lg-3 col-lg-offset-6">
+            <a class="btn btn-default" href="{{ route('{{&simple_name}}.index') }}">Cancel</a>
+        </div>
+        <div class="col-lg-3">
+            {{ Form::submit('Create {{&proper_name}}', array('class' => 'btn btn-primary')) }}
+        </div>
+    </div>
+{{ Form::close() }}

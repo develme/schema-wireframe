@@ -1,0 +1,2 @@
+        <!-- Generated from: {{&file}} -->
+        {{ Form::input('{{type}}', '{{name}}', null, array('class' => 'form-control', '{{required}}')) }}

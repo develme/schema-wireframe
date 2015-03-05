@@ -1,0 +1,4 @@
+        <div class="row" style="line-height: 40px;">
+            <div class="col-lg-6 form-label">
+                {{title}}:
+            </div>
