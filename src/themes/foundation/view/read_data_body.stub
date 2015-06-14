@@ -1,5 +1,5 @@
             <div class="large-6 columns">
-                {{ $_{{&simple_name}}->{{name}} }}<br />
+                {!! $_{{&simple_name}}->{{name}} !!}<br />
             </div>
         </div>
 
