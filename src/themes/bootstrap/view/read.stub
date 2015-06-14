@@ -1,4 +1,4 @@
-<h3>View {{&proper_name}}<a href="{{ route('{{&simple_name}}.edit', $_{{&simple_name}}->id) }}" class="btn btn-lg btn-primary pull-right">Edit {{&proper_name}}</a></h3>
+<h3>View {{&proper_name}}<a href="{!! route('{{&simple_name}}.edit', $_{{&simple_name}}->id) !!}" class="btn btn-lg btn-primary pull-right">Edit {{&proper_name}}</a></h3>
 <hr />
 <div class="row">
     <div class="col-lg-12">
@@ -6,13 +6,13 @@
     </div>
 </div>
     
-{{ Form::open(array('route' => array('{{&simple_name}}.destroy', $_{{&simple_name}}->id), 'method' => 'delete', 'class' => 'form-horizontal')) }}
+{!! Form::open(array('route' => array('{{&simple_name}}.destroy', $_{{&simple_name}}->id), 'method' => 'delete', 'class' => 'form-horizontal')) !!}
     <div class="form-group" style="padding-top: 28px;">
         <div class="col-lg-3 col-lg-offset-6">
-            <a class="btn btn-default " href="{{ route('{{&simple_name}}.index') }}">Back</a>
+            <a class="btn btn-default " href="{!! route('{{&simple_name}}.index') !!}">Back</a>
         </div>
         <div class="col-lg-3">
-            {{ Form::submit('Delete {{&proper_name}}', array('class' => 'btn btn-primary btn-danger')) }}
+            {!! Form::submit('Delete {{&proper_name}}', array('class' => 'btn btn-primary btn-danger')) !!}
         </div>
     </div>
-{{ Form::close() }}
+{!! Form::close() !!}

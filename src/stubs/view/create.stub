@@ -1,7 +1,7 @@
-{{ Form::model($_{{&simple_name}}, array('route' => array('{{&simple_name}}.store'))) }}
+{!! Form::model($_{{&simple_name}}, array('route' => array('{{&simple_name}}.store'))) !!}
     {{&data_head_body}}
 
     <div>
-        {{ Form::submit('Create {{&proper_name}}') }}
+        {!! Form::submit('Create {{&proper_name}}') !!}
     </div>
-{{ Form::close() }}
+{!! Form::close() !!}

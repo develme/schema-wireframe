@@ -1,7 +1,7 @@
-{{ Form::model($_{{&simple_name}}, array('route' => array('{{&simple_name}}.update', $_{{&simple_name}}->id), 'method' => "PUT")) }}
+{!! Form::model($_{{&simple_name}}, array('route' => array('{{&simple_name}}.update', $_{{&simple_name}}->id), 'method' => "PUT")) !!}
     {{&data_head_body}}
     
     <div>
-        {{ Form::submit('Update {{&proper_name}}') }}
+        {!! Form::submit('Update {{&proper_name}}') !!}
     </div>
-{{ Form::close() }}
+{!! Form::close() !!}

@@ -1,1 +1,1 @@
-{{ $_{{&simple_name}}->{{name}} }}<br />
+{!! $_{{&simple_name}}->{{name}} !!}<br />
