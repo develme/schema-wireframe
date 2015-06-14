@@ -278,6 +278,20 @@ abstract class SchemaGeneratorCommand extends GeneratorCommand
     }
 
     /**
+     * Get application version
+     *
+     * @author Verron Knowles <Verron.Knowles@develme.com>
+     * @return String
+     */
+    protected function getApplicationVersion()
+    {
+        $app = $this->app;
+        preg_match_all('!\d+!', $app::VERSION, $versions);
+
+        return substr(implode(".", array_flatten($versions)), 0, 3);
+    }
+
+    /**
      * Get the class name
      *
      * @author Verron Knowles <Verron.Knowles@develme.com>

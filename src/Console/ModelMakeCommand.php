@@ -58,7 +58,7 @@ class ModelMakeCommand extends SchemaGeneratorCommand
      */
     protected function getStubDirectory()
     {
-        return __DIR__.'/../stubs/model/';
+        return __DIR__.'/../stubs/model/'.$this->getApplicationVersion().'/';;
     }
     
     /**

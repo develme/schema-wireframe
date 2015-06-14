@@ -53,7 +53,7 @@ class ControllerMakeCommand extends SchemaGeneratorCommand
      */
     protected function getStub()
     {
-        return $this->getStubDirectory() . 'base.stub';
+        return $this->getStubDirectory().'base.stub';
     }
 
     /**
@@ -64,7 +64,7 @@ class ControllerMakeCommand extends SchemaGeneratorCommand
      */
     protected function getStubDirectory()
     {
-        return __DIR__.'/../stubs/controller/';
+        return __DIR__.'/../stubs/controller/'.$this->getApplicationVersion().'/';
     }
 
     /**
