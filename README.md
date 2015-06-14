@@ -13,7 +13,7 @@ composer require develme/schema-wireframe --dev
 
 ## Configuration
 
-Configure schema connection settings withdin config/database.php, so the
+Configure schema connection settings within config/database.php, so the
 package knows how to get table information from MySQL. This connection has to
 be named schema.
 
@@ -64,7 +64,8 @@ Example:
 php artisan make:schema-controller Admin\\User --table="users" --model="App\\User"
 ```
 
-Please note that when providing namespaces, include two back slashes (\\)
+Please note that when providing namespaces, include two back slashes (\\\\)
+
 Also note that when providing the model class, the root namespace should also
 be included
 
