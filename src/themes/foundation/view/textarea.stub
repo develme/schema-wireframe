@@ -1,0 +1,2 @@
+        <!-- Generated from: {{&file}} -->
+        {!! Form::textarea('{{name}}', null, array('{{required}}')) !!}
