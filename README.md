@@ -3,7 +3,7 @@
 This package was created to quickly stub/frame out controllers, models, and
 views in a CRUD fashion.
 
-## Instalation
+## Installation
 
 Via Composer Require
 
