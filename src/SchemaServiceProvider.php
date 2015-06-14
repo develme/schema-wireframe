@@ -36,17 +36,16 @@ class SchemaServiceProvider extends ServiceProvider
     private function registerCommands()
     {
         $commands = $this->commands;
+        $bind_names = [];
 
         foreach ($commands as $command) {
             $this->registerCommand($command);
+
+            $bind_name = strtolower($command);
+            $bind_names[] = "command.schema.$bind_name";
         }
 
-        $this->commands(
-            'command.schema.app',
-            'command.schema.controller',
-            'command.schema.model',
-            'command.schema.view'
-        );
+        call_user_func_array([$this, 'commands'], $bind_names);
     }
 
     /**
