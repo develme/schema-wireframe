@@ -1,0 +1,14 @@
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function edit($id)
+    {
+        // Get {{model_name}} by id
+        $_{{simple_name}} = $this->model->find($id);
+
+        // \View for {{model_name}}
+        return \View::make('{{simple_name}}.update', compact('_{{simple_name}}'));
+    }

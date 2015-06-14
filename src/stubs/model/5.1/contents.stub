@@ -1,0 +1,13 @@
+	/**
+	 * Table used with model
+	 *
+	 * @var string
+	 */
+	protected $table = {{table}};
+
+	/**
+	 * Mass assignable fields
+	 *
+	 * @var Array
+	 */
+	protected $fillable = [{{fillable}}];

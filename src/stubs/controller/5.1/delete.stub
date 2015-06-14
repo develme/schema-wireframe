@@ -1,0 +1,17 @@
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function destroy($id)
+    {
+        // Get {{model_name}} by id
+        $_{{simple_name}} = $this->model->find($id);
+
+        // Delete the modal
+        $_{{simple_name}}->delete();
+
+        // View for {{model_name}}
+        return \Redirect::route('{{simple_name}}.index')->with('success', '{{proper_name}} successfully deleted');
+    }

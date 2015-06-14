@@ -1,0 +1,20 @@
+    /**
+     * Model for controller
+     *
+     * @type {{model_name}}
+     */
+    protected $model;
+   
+    /**
+     * Constructor
+     *
+     * @author Verron Knowles <Verron.Knowles@develme.com>
+     * @param $model
+     * @return void
+     */
+    public function __construct(\{{model_name}} $model)
+    {
+        $this->model = $model;
+
+    }
+

@@ -1,0 +1,14 @@
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function show($id)
+    {
+        // Get {{model_name}} by id
+        $_{{simple_name}} = $this->model->find($id);
+
+        // Read view for {{model_name}}
+        return \View::make('{{simple_name}}.read', compact('_{{simple_name}}'));
+    }

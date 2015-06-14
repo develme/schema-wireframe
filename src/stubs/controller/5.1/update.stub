@@ -1,0 +1,19 @@
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function update($id)
+    {
+        // Only pull what we need
+        $update_data = \Input::only({{fillable}});
+
+        // You really should add some validation
+
+        // Be wary, with great power comes great responsibility
+        $_{{simple_name}} = $this->model->find($id)->update($update_data);
+        
+        // \Redirection for {{model_name}}
+        return \Redirect::route('{{simple_name}}.show', $id)->with('success', '{{proper_name}} successfully created');
+    }

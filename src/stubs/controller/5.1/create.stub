@@ -1,0 +1,18 @@
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @return Response
+     */
+    public function store()
+    {
+        // Only pull what we need
+        $create_data = \Input::only({{fillable}});
+
+        // You really should add some validation
+
+        // Be wary, with great power comes great responsibility
+        $_{{simple_name}} = $this->model->create($create_data);
+
+        // View for {{model_name}}
+        return \Redirect::route('{{simple_name}}.show', $_{{simple_name}}->id)->with('success', '{{proper_name}} successfully created');
+    }
