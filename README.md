@@ -10,3 +10,16 @@ Via Composer Require
 ```
 composer require develme/schema-wireframe --dev
 ```
+
+## Configuration
+
+Make sure to register the service provider within config/app.php
+
+```
+// ...
+/*
+ * Third Party Service Providers...
+ */
+'DevelMe\SchemaServiceProvider',
+// ...
+```
