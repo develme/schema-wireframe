@@ -246,9 +246,11 @@ abstract class SchemaGeneratorCommand extends GeneratorCommand
      */
     public function getTableColumns($table)
     {
+        $default_connection = $this->config->get('database.default');
+
         $column_where = [
             'table_name' => $table,
-            'table_schema' => $this->config->get('database.connections.mysql.database'),
+            'table_schema' => $this->config->get('database.connections.'.$default_connection.'.database'),
         ];
 
         $column_select = [
